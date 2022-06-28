@@ -37,7 +37,7 @@ module.exports = [
     "meta",
     {
       name: "keywords",
-      content: "白开水-先生blog,Go,Golang开发,VuePress搭建,记录生活和技术路程",
+      content: "白开水blog,Go,Golang开发,VuePress搭建,记录生活和技术路程",
     },
   ],
   [

@@ -2,16 +2,16 @@
 // 首页左上角 | 文章右上角的名字
 const penName = "白开水";
 // 首页左上角的描述，衔接 penName
-const title = "-先生";
+const title = "";
 // 文章右上角点击名字的跳转链接
 const link = "https://xingcxb.github.io/";
 // 底部的 | 后的描述
-const footerTitle = "白开水-先生";
+const footerTitle = "白开水";
 // 头像图片
 const avatar =
   "https://symbol-node.oss-cn-shanghai.aliyuncs.com/blog/basic/Avatar.png";
 // 头像下的昵称
-const name = "白开水-先生";
+const name = "白开水";
 // 头像下的签名
 const slogan = "知行合一";
 

@@ -1,8 +1,8 @@
 ---
 home: true
 # heroImage: https://symbol-node.oss-cn-shanghai.aliyuncs.com/blog/basic/background.jpg
-heroText: 白开水-先生
-tagline: 有形即有度，有度必满盈。故君子之思白开水-先生，君子之行白开水-先生，君子之量白开水-先生。
+heroText: 白开水
+tagline: 有形即有度，有度必满盈。故君子之思白开水，君子之行白开水，君子之量白开水。
 # actionText: 立刻进入 →
 # actionLink: /web/
 # bannerBg: custom #custom自定义 # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
