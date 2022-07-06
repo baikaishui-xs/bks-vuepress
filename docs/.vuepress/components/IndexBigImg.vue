@@ -48,9 +48,9 @@ export default {
     this.initConfig();
 
     // 初始化组件功能
-    if (this.bgTimeColor) {
-      this.bgTimeColorAndTip();
-    }
+    // if (this.bgTimeColor) { // 首页问候提示【闲置】
+    //   this.bgTimeColorAndTip();
+    // }
     setTimeout(() => {
       this.noBgBlur();
     }, 100);
@@ -192,57 +192,57 @@ export default {
       }
     },
     // 背景色随时间变化，时间提示框内容随时间变化
-    bgTimeColorAndTip() {
-      var hours = new Date().getHours();
-      var minutes = new Date().getMinutes();
-      var seconds = new Date().getSeconds();
-      hours = hours < 10 ? "0" + hours : hours;
-      minutes = minutes < 10 ? "0" + minutes : minutes;
-      seconds = seconds < 10 ? "0" + seconds : seconds;
-      let div = document.createElement("div");
-      div.className = "banner-color";
-      if (hours >= 6 && hours < 11) {
-        div.style.backgroundColor = this.bgTimeColorArray[0];
-        addTip(
-          `早上好呀~~，现在是 ${hours}:${minutes}:${seconds}，吃早餐了吗？😊🤭`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 12 && hours <= 16) {
-        div.style.backgroundColor = this.bgTimeColorArray[0];
-        addTip(
-          `下午好呀~~，现在是 ${hours}:${minutes}:${seconds}，繁忙的下午也要适当休息哦🥤🏀~~`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 16 && hours <= 19) {
-        div.style.backgroundColor = this.bgTimeColorArray[1];
-        addTip(
-          `到黄昏了~~，现在是 ${hours}:${minutes}:${seconds}，该准备吃饭啦🥗🍖~~`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 19 && hours < 24) {
-        div.style.backgroundColor = this.bgTimeColorArray[2];
-        addTip(
-          `晚上好呀~~，现在是 ${hours}:${minutes}:${seconds}，该准备洗漱睡觉啦🥱😪~~`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 0 && hours < 6) {
-        div.style.backgroundColor = this.bgTimeColorArray[3];
-        addTip(
-          `别再熬夜了~~，现在是 ${hours}:${minutes}:${seconds}，早点睡吧，让我们一起欣赏早上的太阳~~😇🛏`,
-          "info",
-          50,
-          4000
-        );
-      }
-      document.getElementsByClassName(banner)[0].parentNode.append(div);
+    bgTimeColorAndTip() { // 问候提示【闲置】
+      // var hours = new Date().getHours();
+      // var minutes = new Date().getMinutes();
+      // var seconds = new Date().getSeconds();
+      // hours = hours < 10 ? "0" + hours : hours;
+      // minutes = minutes < 10 ? "0" + minutes : minutes;
+      // seconds = seconds < 10 ? "0" + seconds : seconds;
+      // let div = document.createElement("div");
+      // div.className = "banner-color";
+      // if (hours >= 6 && hours < 11) {
+      //   div.style.backgroundColor = this.bgTimeColorArray[0];
+      //   addTip(
+      //     `早上好呀~~，现在是 ${hours}:${minutes}:${seconds}，吃早餐了吗？😊🤭`,
+      //     "info",
+      //     50,
+      //     4000
+      //   );
+      // } else if (hours >= 12 && hours <= 16) {
+      //   div.style.backgroundColor = this.bgTimeColorArray[0];
+      //   addTip(
+      //     `下午好呀~~，现在是 ${hours}:${minutes}:${seconds}，繁忙的下午也要适当休息哦🥤🏀~~`,
+      //     "info",
+      //     50,
+      //     4000
+      //   );
+      // } else if (hours >= 16 && hours <= 19) {
+      //   div.style.backgroundColor = this.bgTimeColorArray[1];
+      //   addTip(
+      //     `到黄昏了~~，现在是 ${hours}:${minutes}:${seconds}，该准备吃饭啦🥗🍖~~`,
+      //     "info",
+      //     50,
+      //     4000
+      //   );
+      // } else if (hours >= 19 && hours < 24) {
+      //   div.style.backgroundColor = this.bgTimeColorArray[2];
+      //   addTip(
+      //     `晚上好呀~~，现在是 ${hours}:${minutes}:${seconds}，该准备洗漱睡觉啦🥱😪~~`,
+      //     "info",
+      //     50,
+      //     4000
+      //   );
+      // } else if (hours >= 0 && hours < 6) {
+      //   div.style.backgroundColor = this.bgTimeColorArray[3];
+      //   addTip(
+      //     `别再熬夜了~~，现在是 ${hours}:${minutes}:${seconds}，早点睡吧，让我们一起欣赏早上的太阳~~😇🛏`,
+      //     "info",
+      //     50,
+      //     4000
+      //   );
+      // }
+      // document.getElementsByClassName(banner)[0].parentNode.append(div);
     },
     // 字体淡入淡出
     textFadeInAndOut(

@@ -148,10 +148,12 @@ export default {
 }
 /* 箭头元素 */
 .expand {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   cursor: pointer;
   position: absolute;
+  background: #fdbc40;
+  border-radius: 50%;
   z-index: 3;
   top: 0.8em;
   right: 0.5em;
@@ -171,8 +173,8 @@ div[class*="language-"].line-numbers-mode .line-numbers-wrapper,
 }
 /* 箭头关闭后旋转 -90 度 */
 .closed {
-  transform: rotate(90deg) translateY(-3px);
-  transition: all 0.3s;
+  /* transform: rotate(90deg) translateY(-3px);
+  transition: all 0.3s; */
 }
 li .closed {
   transform: rotate(90deg) translate(5px, -8px);
@@ -215,7 +217,7 @@ div[class*="language-"].line-numbers-mode::after {
   position: absolute;
   top: 0.8rem;
   right: 2rem;
-  fill: rgba(238, 255, 255, 0.8);
+  fill: rgba(223, 52, 52, 0.8);
   opacity: 1;
 }
 .code-copy svg {

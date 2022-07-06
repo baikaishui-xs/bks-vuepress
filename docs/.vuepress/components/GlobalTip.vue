@@ -21,52 +21,52 @@ export default {
     },
   },
   methods: {
-    bgTimeColor() {
-      var hours = new Date().getHours();
-      var minutes = new Date().getMinutes();
-      var seconds = new Date().getSeconds();
-      hours = hours < 10 ? "0" + hours : hours;
-      minutes = minutes < 10 ? "0" + minutes : minutes;
-      seconds = seconds < 10 ? "0" + seconds : seconds;
-      let div = document.createElement("div");
-      div.className = "banner-color";
-      if (hours >= 6 && hours < 11) {
-        addTip(
-          `早上好呀~~，现在是 ${hours}:${minutes}:${seconds}，吃早餐了吗？😊🤭`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 12 && hours <= 16) {
-        addTip(
-          `下午好呀~~，现在是 ${hours}:${minutes}:${seconds}，繁忙的下午也要适当休息哦🥤🏀~~`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 16 && hours <= 19) {
-        addTip(
-          `到黄昏了~~，现在是 ${hours}:${minutes}:${seconds}，该准备吃饭啦🥗🍖~~`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 19 && hours < 24) {
-        addTip(
-          `晚上好呀~~，现在是 ${hours}:${minutes}:${seconds}，该准备洗漱睡觉啦🥱😪~~`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 0 && hours < 6) {
-        addTip(
-          `别再熬夜了~~，现在是 ${hours}:${minutes}:${seconds}，早点睡吧，让我们一起欣赏早上的太阳~~😇🛏`,
-          "info",
-          50,
-          4000
-        );
-      }
-      document.body.append(div);
+    bgTimeColor() { // 问候提示【闲置】
+      // var hours = new Date().getHours();
+      // var minutes = new Date().getMinutes();
+      // var seconds = new Date().getSeconds();
+      // hours = hours < 10 ? "0" + hours : hours;
+      // minutes = minutes < 10 ? "0" + minutes : minutes;
+      // seconds = seconds < 10 ? "0" + seconds : seconds;
+      // let div = document.createElement("div");
+      // div.className = "banner-color";
+      // if (hours >= 6 && hours < 11) {
+      //   addTip(
+      //     `早上好呀~~，现在是 ${hours}:${minutes}:${seconds}，吃早餐了吗？😊🤭`,
+      //     "info",
+      //     50,
+      //     4000
+      //   );
+      // } else if (hours >= 12 && hours <= 16) {
+      //   addTip(
+      //     `下午好呀~~，现在是 ${hours}:${minutes}:${seconds}，繁忙的下午也要适当休息哦🥤🏀~~`,
+      //     "info",
+      //     50,
+      //     4000
+      //   );
+      // } else if (hours >= 16 && hours <= 19) {
+      //   addTip(
+      //     `到黄昏了~~，现在是 ${hours}:${minutes}:${seconds}，该准备吃饭啦🥗🍖~~`,
+      //     "info",
+      //     50,
+      //     4000
+      //   );
+      // } else if (hours >= 19 && hours < 24) {
+      //   addTip(
+      //     `晚上好呀~~，现在是 ${hours}:${minutes}:${seconds}，该准备洗漱睡觉啦🥱😪~~`,
+      //     "info",
+      //     50,
+      //     4000
+      //   );
+      // } else if (hours >= 0 && hours < 6) {
+      //   addTip(
+      //     `别再熬夜了~~，现在是 ${hours}:${minutes}:${seconds}，早点睡吧，让我们一起欣赏早上的太阳~~😇🛏`,
+      //     "info",
+      //     50,
+      //     4000
+      //   );
+      // }
+      // document.body.append(div);
     },
   },
 };
